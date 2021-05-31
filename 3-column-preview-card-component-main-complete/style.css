@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    --yellowish: #e28625;
+    --lt-greenish: #006971;
+    --dk-greenish: #004140;
+    --whiteish: #f2f2f2;
+    --white: #ffffff;
+    --big-shoulder: "Big Shoulders Display", cursive;
+    --lexend-deca: "Lexend Deca", sans-serif;
+}
+
+body {
+     background-color: var(--whiteish);
+}
+
+main {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.card {
+    width: 327px;
+    height: 442px;
+    padding-left: 48px;
+    margin: 0 auto;
+}
+
+.card-img {
+     width: 64px;
+     height: 40px;
+     margin-top: 48px;
+}
+
+.card-title {
+    text-transform: uppercase;
+   font-size: 40px;
+   font-weight: 700;
+   margin-top: 30px;
+   font-family: var(--big-shoulder);
+   color: var(--whiteish);
+}
+
+.card-text {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 25px;
+    font-family: var(--lexend-deca);
+    opacity: .75;
+    max-width: 231px;
+    color: var(--white);
+}
+
+
+#sedans {
+   background-color: var(--yellowish);
+   border-radius: 8px 8px 0  0;
+ 
+}
+
+#suvs {
+   background-color: var(--lt-greenish);
+}
+
+#luxury {
+    background-color: var(--dk-greenish);
+    border-radius: 0 0 8px 8px;
+}
+
+.sedans {
+  color: var(--yellowish);
+}
+
+.suvs {
+    color: var(--lt-greenish);
+}
+
+.luxury {
+    color: var(--dk-greenish);
+}
+
+button {
+    width: 146px;
+    height: 48px;
+    font-size: 15px;
+    font-family: var(--lexend-deca);
+    border-radius: 48px;
+    border: none;
+    margin-top: 50px;
+
+}
+
+button:hover {
+    color: var(--white);
+    border: 2px solid white;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1000px){
+    main {
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+      align-items: center;
+      position: relative;
+    }
+   
+    .card {
+        margin: 0;
+        width: 307px;
+        height: 500px;
+    }
+
+    button {
+         margin-top: 110px;
+    }
+
+    #sedans {
+        margin: 0;
+        border-radius: 8px 0 0 8px;
+    }
+
+    #luxury {
+        border-radius: 0 8px 8px 0;
+    }
+    
+
+}
+
